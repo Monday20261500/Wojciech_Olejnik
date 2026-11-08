@@ -1,4 +1,4 @@
-#include <iostream>
+#include <iostream>   // prosze uzupelnic
 #include <string>
 #include <vector>
 #include <cstdlib>
@@ -22,7 +22,7 @@ class tablica{
         	std::cout<<"Tablica o wielkosci "<<rozmiar<<" zostala pokonana"<<std::endl;
  		}
 };
-class samochod {
+class samochod {    // konstruktor domyslny?
     private:
         std::string make;
         std::string model;
