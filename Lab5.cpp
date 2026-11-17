@@ -5,7 +5,7 @@
 #include <ctime>
 #include <algorithm>
 #include <cctype>
-namespace Zad2{
+namespace Zad2{   // poprawnie
 class Pojazd {
 	protected:
 		std::string marka;
@@ -18,7 +18,7 @@ class Pojazd {
 		void zatrzymaj() {
 			std::cout<<"Pojazd hamuje"<<std::endl;
 			std::cout<<marka<<std::endl<<model<<std::endl;
-			std::cout<<"Pojazd sie wywroclawil w poznaniu"<<std::endl;
+			std::cout<<"Pojazd sie wywroclawil w poznaniu"<<std::endl;   // ???
 		}
 };
 class Samochod : public Pojazd {
@@ -40,8 +40,8 @@ class Rower : public Pojazd {
 		}
 };
 }
-namespace Zad1_3_5_6{ //private po prostu uniemozliwia urzcie metod wykorzystujacych prywatne atrybuty
-class Pojazd {
+namespace Zad1_3_5_6{ //private po prostu uniemozliwia urzcie metod wykorzystujacych prywatne atrybuty ???  // nie w tym rzecz - poprawic
+class Pojazd {                                                                                  // brak dziedziczenia protected - uzupelnic
 	protected:
 		std::string marka;
 		std::string model;
@@ -78,7 +78,7 @@ class Rower : public Pojazd {
 		}
 };
 }
-namespace Zad7{
+namespace Zad7{   // poprawnie
 class Silnikowy {
 	public:
 		virtual ~Silnikowy() = default;
@@ -102,7 +102,7 @@ class Hybrydowy : public Silnikowy, public Elektryczny {
     	}
 };
 }
-namespace Zad9{
+namespace Zad9{   // poprawnie
 class Pojazd {
 	protected:
 		std::string marka;
@@ -137,7 +137,7 @@ class ElektrycznySamochod : public Samochod {
 		}
 };
 }
-namespace Zad10{
+namespace Zad10{   // poprawnie
 class Pojazd {
 	protected:
 		std::string marka;
@@ -172,7 +172,7 @@ class Elektryczny : virtual public Pojazd{
 		Elektryczny(const std::string& marka = "Nissan", const std::string& model = "Leaf")
 		: Pojazd(marka, model) {}
 		virtual void ladowanie() {
-			std::cout<<"Elektryczny sie laduje"<<std::endl;
+			std::cout<<"Elektryczny sie laduje"<<std::endl;    // gdzie metoda przyspiesz?
 		}
 };
 class Hybryda : public Silnikowy, public Elektryczny {
