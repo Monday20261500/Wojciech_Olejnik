@@ -172,7 +172,7 @@ class Elektryczny : virtual public Pojazd{
 		Elektryczny(const std::string& marka = "Nissan", const std::string& model = "Leaf")
 		: Pojazd(marka, model) {}
 		virtual void ladowanie() {
-			std::cout<<"Elektryczny sie laduje"<<std::endl;    // gdzie metoda przyspiesz?
+			std::cout<<"Elektryczny sie laduje"<<std::endl;   
 		}
 };
 class Hybryda : public Silnikowy, public Elektryczny {
